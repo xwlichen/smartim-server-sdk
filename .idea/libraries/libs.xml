@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="libs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/gson-2.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/netty-all-4.1.17.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/rabbitmq-client.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/slf4j-api-1.7.21.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/slf4j-log4j12-1.7.21.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
