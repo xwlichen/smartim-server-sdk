@@ -2,6 +2,8 @@ package com.smart.im.server.sdk.core;
 
 
 import com.smart.im.server.sdk.Constant;
+import com.smart.im.server.sdk.listenter.OnEventListener;
+import com.smart.im.server.sdk.listenter.OnQosListener;
 import com.smart.im.server.sdk.wrapper.ServerLauncherWrapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,9 +20,14 @@ public class ServerLauncher extends ServerLauncherWrapper {
     private static Logger logger = LoggerFactory.getLogger(ServerLauncher.class);
 
 
-
     public void init() {
-        serverCoreHandler=new ServerCoreHandler();
+        serverCoreHandler = new ServerCoreHandler();
+
+    }
+
+    public void init(OnEventListener onEventListener, OnQosListener onQosListener) {
+        this.onEventListener = onEventListener;
+        this.onQosListener = onQosListener;
 
     }
 

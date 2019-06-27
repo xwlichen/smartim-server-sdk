@@ -2,6 +2,8 @@ package com.smart.im.server.sdk.wrapper;
 
 import com.smart.im.server.sdk.core.ServerCoreHandler;
 import com.smart.im.server.sdk.interf.IServerLauncher;
+import com.smart.im.server.sdk.listenter.OnEventListener;
+import com.smart.im.server.sdk.listenter.OnQosListener;
 
 /**
  * @date : 2019-06-26 14:02
@@ -27,4 +29,11 @@ public abstract class ServerLauncherWrapper implements IServerLauncher {
      * 是否正在运行
      */
     protected boolean isRunning = false;
+
+
+    protected OnEventListener onEventListener;
+
+    protected OnQosListener onQosListener;
+
+
 }
