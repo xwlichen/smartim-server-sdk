@@ -8,6 +8,11 @@ package com.smart.im.server.sdk;
  */
 public class Constant {
 
-    public static String LOGGER_NAME="[SMARTIM-server-netty] ";
+    public static String LOGGER_NAME = "[SMARTIM-server-netty] ";
+
+    public static boolean DEBUG = true;
+
+    public static int WORKER_ID;
+    public static int DATACENTER_ID;
 
 }
